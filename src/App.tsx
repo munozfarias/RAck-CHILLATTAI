@@ -1,6 +1,5 @@
 // src/App.tsx
 
-import React from 'react';
 import WeightCalculator from './WeightCalculator';
 import './styles.css';  // Asegúrate de tener tus estilos importados aquí
 
