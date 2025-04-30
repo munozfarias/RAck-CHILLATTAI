@@ -40,8 +40,8 @@ const WeightCalculator: React.FC = () => {
     const combo: string[] = [];
     for (const d of availableDiscs) {
       let used = 0;
-      const maxPerSide = Math.floor(d.maxQty / 2);
-      while (rem >= d.w - 1e-6 && used < d.maxQty) {
+      const maxPerSide = Math.floor(d.maxQty / 2); // Corrección aquí
+      while (rem >= d.w - 1e-6 && used < maxPerSide) { // Y aquí
         combo.push(d.label);
         rem = parseFloat((rem - d.w).toFixed(3));
         used++;
@@ -55,7 +55,6 @@ const WeightCalculator: React.FC = () => {
     }
     return { combo, rem };
   };
-
   const calculate = () => {
     setError(''); setExact([]); setBelow(null); setAbove(null);
     if (targetTotal <= barWeight) { setError('El peso objetivo debe ser mayor que la barra seleccionada.'); return; }
