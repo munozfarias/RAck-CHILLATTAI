@@ -1,0 +1,33 @@
+/* Fondo claro y texto oscuro */
+body {
+    background-color: #ffffff;
+    color: #1a1a1a;
+  }
+  
+  /* Contenedor de la calculadora */
+  .calculator-container {
+    background-color: #f8f9fa; /* muy claro */
+    color: #212529;            /* casi negro */
+    border: 2px solid #343a40; /* borde oscuro */
+    border-radius: 8px;
+  }
+  
+  /* Títulos */
+  h2, h3 {
+    color: #212529;
+  }
+  
+  /* Inputs y botón */
+  input[type="number"] {
+    background-color: #ffffff;
+    color: #212529;
+    border: 1px solid #343a40;
+  }
+  button {
+    background-color: #343a40; /* oscuro */
+    color: #f8f9fa;            /* claro */
+  }
+  button:hover {
+    background-color: #212529;
+  }
+  
