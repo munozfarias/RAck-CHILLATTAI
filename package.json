@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://github.com/munozfarias/RAck-CHILLATTAI",
+  "homepage": "https://github.com/munozfarias/RAck-CHILLATTAI/",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",

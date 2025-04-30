@@ -40,6 +40,7 @@ const WeightCalculator: React.FC = () => {
     const combo: string[] = [];
     for (const d of availableDiscs) {
       let used = 0;
+      const maxPerSide = Math.floor(d.maxQty / 2);
       while (rem >= d.w - 1e-6 && used < d.maxQty) {
         combo.push(d.label);
         rem = parseFloat((rem - d.w).toFixed(3));
